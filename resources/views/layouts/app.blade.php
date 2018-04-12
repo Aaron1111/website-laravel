@@ -41,9 +41,9 @@
                 </div> <!-- end of .navbar-start -->
 
                 <div class="navbar-end nav-menu" style="overflow: visible">
-                    @if(!Auth::guest())
-                        <a href="#" class="navbar-item is-tab">Login</a>
-                        <a href="#" class="navbar-item is-tab">Sing Up</a>
+                    @if(Auth::guest())
+                        <a href="{{route('login')}}" class="navbar-item is-tab">Login</a>
+                        <a href="{{route('register')}}" class="navbar-item is-tab">Sing Up</a>
                     @else
                         <div class="navbar-item has-dropdown is-hoverable">
                             <a class="navbar-link">Hey Remi</a>
