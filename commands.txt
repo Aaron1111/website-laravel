@@ -1,0 +1,7 @@
+php artisan laratrust:migration
+composer dump-autoload
+php artisan laratrust:seeder
+
+
+php artisan db:seed
+
